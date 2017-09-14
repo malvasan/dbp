@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Calculadora</title>
+<script>
+	function agregar(num){
+	pantalla.value=pantalla.value+num;
+	
+}
+</script>
+
+
+</head>
+<body>
+<form name="calculadora">
+	<table border="1" width="100" align="center" >
+	<tr>
+	<td colspan="4"><input type="text" name="pantalla" /></td>
+	</tr>
+	<tr>
+	<td><input type="button" value="7" onClick="pantalla.value+='7'"></td></td>
+	<td><input type="button" value="8" onClick="pantalla.value+='8'"></td></td>
+	<td><input type="button" value="9" onClick="pantalla.value+='9'"></td></td>
+	<td><input type="button" value="+" onClick="pantalla.value+='+'"></td>
+	</tr>
+	<tr>
+	<td><input type="button" value="4" onClick="pantalla.value+='4'"></td></td>
+	<td><input type="button" value="5" onClick="pantalla.value+='5'"></td></td>
+	<td><input type="button" value="6" onClick="pantalla.value+='6'"></td></td>
+	<td><input type="button" value="-" onClick="pantalla.value+='-'"></td>
+	</tr>
+	<tr>
+	<td><input type="button" value="1" onClick="pantalla.value+='1'"></td></td>
+	<td><input type="button" value="2" onClick="pantalla.value+='2'"></td></td>
+	<td><input type="button" value="3" onClick="pantalla.value+='3'"></td></td>
+	<td><input type="button" value="*" onClick="pantalla.value+='*'"></td>
+	</tr>
+	<tr>
+	<td><input type="button" value="C" onClick="pantalla.value=''"></td>
+	<td><input type="button" value="0" onClick="pantalla.value+='0'"></td>
+	<td><input type="button" value="=" onClick="pantalla.value=eval(pantalla.value)"></td>
+	<td><input type="button" value="/" onClick="pantalla.value+='/'"></td>
+	</tr>
+</form>
+</body>
+</html>
